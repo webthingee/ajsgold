@@ -14,10 +14,17 @@ $ sudo gem install bundler
 $ bundle
 ```
 
-Next you will either want to point your server at the app folder, or install Grunt (preferred method). To install to install Grunt you will first need [Node](http://nodejs.org/download/) installed. Then:
+Next you will install Grunt (preferred method). To install to install Grunt you will first need [Node](http://nodejs.org/download/) installed. Then:
 
 ```shell
 $ sudo npm install
 ```
 
 This will download all of the appropriate javascript packages needing to create the server. Once this is complete you can run "grunt server" and Protobots will spin up a grunt server and open up the start page for you.
+
+## Running
+Once everything is built and loaded you will use grunt to run the site.
+
+```shell
+$ grunt server
+```
