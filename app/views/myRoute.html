@@ -6,9 +6,12 @@
 
 <!-- Desktop Slider -->
 <div class="hide-for-small">
-  <div id="featured" data-orbit>
-    <img ng-repeat="image in images"  src="{{ image }}" alt="slide image">
-  </div>
+  <ul data-orbit data-options="timer_speed:100; navigation_arrows:false;">
+    <li ng-repeat="image in myData">
+      <img src="{{ image.image }}" alt="slide image">
+      <div class="orbit-caption">{{ image.caption }}</div>
+    </li>>
+  </ul>
 </div>
 <!-- End Desktop Slider -->
 <!-- Mobile Header -->
@@ -19,3 +22,11 @@
 </div>
 <!-- End Mobile Header -->
 <br>
+
+
+<ul class="clearing-thumbs" data-clearing>
+  <li ng-repeat="image in images2"><a href="{{ image }}">
+    <img height="100" width="100" src="{{ image }}" alt="slide image">
+    </a>
+  </li>
+</ul>
