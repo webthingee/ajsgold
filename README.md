@@ -22,6 +22,13 @@ $ sudo npm install
 
 This will download all of the appropriate javascript packages needing to create the server. Once this is complete you can run "grunt server" and Protobots will spin up a grunt server and open up the start page for you.
 
+
+Finally you'll need to have bower get all your dependancies.
+
+```shell
+$ bower update
+```
+
 ## Running
 Once everything is built and loaded you will use grunt to run the site.
 
