@@ -7,7 +7,7 @@ AngularJS + Foundation Zurb via Yeoman, Grunt, and Bower
 
 
 ## Installation
-After downloading Protobots, you need to make sure you have the appropriate Ruby gems. To do this, we use bundler.
+After downloading ajsgold, you need to make sure you have the appropriate Ruby gems. To do this, we use bundler.
 
 ```shell
 $ sudo gem install bundler
