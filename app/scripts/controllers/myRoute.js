@@ -11,19 +11,19 @@ myApp
         },
       {
         "image" : "http://lorempixel.com/1000/500/people/3",
-        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        "caption" : "Yavin mon moff aayla obi-wan jabba anakin endor skywalker."
         },
       {
         "image" : "http://lorempixel.com/1000/500/people/8",
-        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        "caption" : "Boba skywalker lars antilles chewbacca."
         },
       {
         "image" : "http://lorempixel.com/1000/500/people/7",
-        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        "caption" : "Amidala ackbar ewok padmé. Kashyyyk mandalore cade sidious skywalker."
         },
       {
         "image" : "http://lorempixel.com/1000/500/people/6",
-        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        "caption" : "Anakin darth dagobah obi-wan. Darth lobot darth naboo sidious dagobah."
         },
       {
         "image" : "http://lorempixel.com/1000/500/people/5",
@@ -38,17 +38,4 @@ myApp
       'http://lorempixel.com/400/800/food/4'
     ];
 
-})
-/* Directives */
-.directive('flexSliderLoader', ['$timeout', function (timer) {
-  return {
-    link: function (scope, elem, attrs, ctrl) {
-      var flex = function () {
-        $('.flexslider').flexslider({
-          animation: "slide"
-        });
-      }
-        timer(flex, 0);
-      }
-  }
-}]);
+});
