@@ -1,56 +1,32 @@
-<!-- Desktop Slider -->
-<div class="hide-for-small">
-  <div id="featured" data-orbit>
-    <img ng-repeat="image in images"  src="{{ image }}" alt="slide image">
-  </div>
-</div>
-<!-- End Desktop Slider -->
-<!-- Mobile Header -->
-<div class="row">
-  <div class="small-12 show-for-small"><br>
-    <img src="http://placehold.it/1000x600&text=For Small Screens" />
-  </div>
-</div>
-<!-- End Mobile Header -->
-<br>
+<h3 class="show-for-small">{{ pageTitle }}</h3>
+<h1 class="hide-for-small">{{ pageTitle }}</h1>
 
-<div class="row">
-<div class="large-12 columns">
-  <h3 class="show-for-small">AngularJS with Foundation Zurb<hr></h3>
-  <div class="panel">
-    <h4 class="hide-for-small">AngularJS with Foundation Zurb<hr></h4>
-     <p ng-repeat="thing in awesomeThings">{{thing}}</p>
-   </div>
- </div>
+<div class="panel">
+  <p ng-repeat="thing in awesomeThings">{{thing}}</p>
 </div>
 
 <div class="row">
   <div class="large-12 columns">
     <div class="row">
-  <!-- Thumbnails -->
-
       <div class="large-3 small-6 columns">
-        <img src="http://placehold.it/250x250&text=Thumbnail" />
+        <img src="http://lorempixel.com/400/400/sports/6" />
         <h6 class="panel">Description</h6>
       </div>
 
       <div class="large-3 small-6 columns">
-        <img src="http://placehold.it/250x250&text=Thumbnail" />
+        <img src="http://lorempixel.com/400/400/sports/7" />
         <h6 class="panel">Description</h6>
       </div>
 
       <div class="large-3 small-6 columns">
-        <img src="http://placehold.it/250x250&text=Thumbnail" />
+        <img src="http://lorempixel.com/400/400/sports/8" />
         <h6 class="panel">Description</h6>
       </div>
 
       <div class="large-3 small-6 columns">
-        <img src="http://placehold.it/250x250&text=Thumbnail" />
+        <img src="http://lorempixel.com/400/400/sports/9" />
         <h6 class="panel">Description</h6>
       </div>
-
-  <!-- End Thumbnails -->
-
     </div>
   </div>
 </div>
@@ -82,11 +58,11 @@
 
           <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.
         </p>
-      </div>
+        </div>
 
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
 
       <div class="large-4 columns hide-for-small">
 

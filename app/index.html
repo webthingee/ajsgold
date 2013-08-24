@@ -11,62 +11,54 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <link rel="stylesheet" href="styles/foundation.css" />
-  <script data-main="scripts/foundation" src="scripts/libs/require.js"></script>
+    <script data-main="scripts/foundation" src="scripts/libs/require.js"></script>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css">
+  </head>
 
-        <!-- build:css({.tmp,app}) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-</head>
   <body ng-app="myApp">
 
-    <!-- Navigation -->
-    <div ng-include="'views/nav.html'"></div>
-    <!-- End Navigation -->
+    <span ng-include="'views/nav.html'"><!-- Navigation --></span>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <!-- App -->
-        <div id="view" class="container" ng-view></div>
-        <!-- End App -->
-      </div>
-    </div>
+    <div class="page-wrapper">
 
-    <!-- Footer -->
-    <footer class="row">
-      <div class="large-12 columns">
-        <hr>
-        <div class="row">
-          <div class="large-6 columns">
-            <p>&copy; Copyright webthingee for now, but it's all yours.</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="inline-list right">
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
-              <li><a href="#">Link 4</a></li>
-            </ul>
-          </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div id="view" class="container" ng-view></div>
         </div>
       </div>
-    </footer>
-    <!-- end footer -->
+
+      <footer class="row"><!-- Footer -->
+        <div class="large-12 columns">
+          <hr>
+          <div class="row">
+            <div class="large-6 columns">
+              <p>&copy; Copyright webthingee for now, but it's all yours.</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer><!-- end footer -->
+
+    </div><!-- /.page-wrapper -->
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
 
-        <!-- build:js scripts/modules.js -->
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <!-- endbuild -->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/myRoute.js"></script>
-        <script src="scripts/controllers/nav.js"></script>
-        <!-- endbuild -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/myRoute.js"></script>
+    <script src="scripts/controllers/nav.js"></script>
 </body>
 </html>

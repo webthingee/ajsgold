@@ -3,7 +3,10 @@
 var myApp = angular.module('myApp', []);
 
 myApp
-.config(function ($routeProvider) {
+.config(function ($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(true);
+  $locationProvider.hashPrefix = '!';
+
   $routeProvider
     .when('/', {
       templateUrl: 'views/main.html',
@@ -13,26 +16,16 @@ myApp
       templateUrl: 'views/myRoute.html',
       controller: 'myRouteCtrl'
     })
-    // .when('/myRoute2', {
-    //   templateUrl: 'views/myRoute.html',
-    //   controller: 'MyrouteCtrl'
-    // })
-    // .when('/myRoute2', {
-    //   templateUrl: 'views/myRoute.html',
-    //   controller: 'MyrouteCtrl'
-    // })
-    // .when('/myRoute', {
-    //   templateUrl: 'views/myRoute.html',
-    //   controller: 'MyrouteCtrl'
-    // })
     .otherwise({
       redirectTo: '/'
     });
-
 })
 .run(function($rootScope) { //@todo ERRORS
   $rootScope.$on('$viewContentLoaded', function () {
-    $(document).foundation();
+    setTimeout(function(){
+      $(document).foundation();
+  },
+      999);
   });
 })
 ;

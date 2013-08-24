@@ -17,7 +17,7 @@ require.config({
 	"foundation/foundation.reveal": { deps: ["jquery"], exports: 'jquery' },
 	"foundation/foundation.section": { deps: ["jquery"], exports: 'jquery' },
 	"foundation/foundation.tooltips": { deps: ["jquery"], exports: 'jquery' },
-	"foundation/foundation.topbar": { deps: ["jquery"], exports: 'jquery' }
+	// "foundation/foundation.topbar": { deps: ["jquery"], exports: 'jquery' }
   }
 });
 
@@ -36,7 +36,7 @@ require(["modernizr",
 	"foundation/foundation.reveal",
 	"foundation/foundation.section",
 	"foundation/foundation.tooltips",
-	"foundation/foundation.topbar"
+	// "foundation/foundation.topbar"
 ], function (modernizr, $) {
   $(document).foundation();
 });

@@ -6,11 +6,27 @@ myApp
 
     $scope.myData = [
       {
-        "image" : "http://lorempixel.com/1000/400/people/1",
+        "image" : "http://lorempixel.com/1000/500/people/9",
         "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
         },
       {
-        "image" : "http://lorempixel.com/1000/400/people/2",
+        "image" : "http://lorempixel.com/1000/500/people/3",
+        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        },
+      {
+        "image" : "http://lorempixel.com/1000/500/people/8",
+        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        },
+      {
+        "image" : "http://lorempixel.com/1000/500/people/7",
+        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        },
+      {
+        "image" : "http://lorempixel.com/1000/500/people/6",
+        "caption" : "Lucas ipsum dolor sit amet darth biggs skywalker binks darth jade."
+        },
+      {
+        "image" : "http://lorempixel.com/1000/500/people/5",
         "caption" : "Ben binks skywalker kamino moff obi-wan yavin jade."
         }
     ];
@@ -22,5 +38,3 @@ myApp
       'http://lorempixel.com/400/800/food/4'
     ];
   });
-
-  // force height to stay.

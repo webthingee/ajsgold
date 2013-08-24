@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900,700);
+@import "compass/css3/transform";
+
+body {
+  background-color: #222222;
+}
+
+body, p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.page-wrapper {
+  background-color: #fff;
+}
+
+// NAVIGATION
+.top-bar {
+  overflow: visible;;
+  margin-bottom: 0;;
+}
+
+.off-canvas-menu--active {
+  @include translate3d(55%, 0, 0);
+  transition: all 0.5s ease-out;
+  z-index: 0;
+}
+.off-canvas-menu--dormant {
+  @include translate3d(0, 0, 0);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+
+.top-bar-section {
+  position: absolute;
+  width: 55%;
+  height: 500px;
+  @media only screen and (min-width: 940px) {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+}

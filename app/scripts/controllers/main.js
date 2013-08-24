@@ -2,6 +2,8 @@
 
 myApp
   .controller('MainCtrl', function ($scope) {
+    $scope.pageTitle = 'AngularJS with Foundation Zurb';
+
     $scope.images = [
       'http://lorempixel.com/400/200/city/1',
       'http://lorempixel.com/400/200/city/2',
