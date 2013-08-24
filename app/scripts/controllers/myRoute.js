@@ -37,4 +37,18 @@ myApp
       'http://lorempixel.com/500/700/food/3',
       'http://lorempixel.com/400/800/food/4'
     ];
-  });
+
+})
+/* Directives */
+.directive('flexSliderLoader', ['$timeout', function (timer) {
+  return {
+    link: function (scope, elem, attrs, ctrl) {
+      var flex = function () {
+        $('.flexslider').flexslider({
+          animation: "slide"
+        });
+      }
+        timer(flex, 0);
+      }
+  }
+}]);

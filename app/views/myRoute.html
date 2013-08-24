@@ -5,24 +5,17 @@
   <p>{{ message }}</p>
 </div>
 
-<!-- Desktop Slider -->
-<div class="hide-for-small">
-  <ul data-orbit data-options="timer_speed:100; navigation_arrows:false;">
+<div class="flexslider" flex-slider-loader>
+  <ul class="slides">
     <li ng-repeat="image in myData">
       <img src="{{ image.image }}" alt="slide image">
-      <div class="orbit-caption">{{ image.caption }}</div>
-    </li>>
+      <p class="flex-caption">{{ image.caption }}</p>
+
+    </li>
   </ul>
 </div>
-<!-- End Desktop Slider -->
-<!-- Mobile Header -->
-<div class="row">
-  <div class="small-12 show-for-small"><br>
-    <img src="http://placehold.it/1000x600&text=For Small Screens" />
-  </div>
-</div>
-<!-- End Mobile Header -->
-<br>
+
+<hr>
 
 <ul class="clearing-thumbs" data-clearing>
   <li ng-repeat="image in images2"><a href="{{ image }}">

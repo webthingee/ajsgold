@@ -5,7 +5,7 @@ var myApp = angular.module('myApp', []);
 myApp
 .config(function ($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
-  $locationProvider.hashPrefix = '!';
+  // $locationProvider.hashPrefix = '!';
 
   $routeProvider
     .when('/', {
@@ -22,10 +22,17 @@ myApp
 })
 .run(function($rootScope) { //@todo ERRORS
   $rootScope.$on('$viewContentLoaded', function () {
-    setTimeout(function(){
-      $(document).foundation();
-  },
-      999);
+
+    // setTimeout(function(){
+    //   console.log('flexslider - fire');
+    //   $('.flexslider').flexslider({
+    //     animation: "slide"
+    //   });
+    // },
+    //   99);
+    //setTimeout
+
   });
 })
 ;
+

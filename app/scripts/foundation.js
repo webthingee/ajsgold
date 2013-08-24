@@ -38,5 +38,5 @@ require(["modernizr",
 	"foundation/foundation.tooltips",
 	// "foundation/foundation.topbar"
 ], function (modernizr, $) {
-  $(document).foundation();
+  // $(document).foundation();
 });
